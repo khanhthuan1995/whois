@@ -1,5 +1,5 @@
 # whois
-wrapper for whoisxml
+a wrapper for whoisxml
 
 ## Usage
 
