@@ -1,6 +1,6 @@
 import json
 import requests
-import argparse
+
 
 
 
@@ -29,9 +29,3 @@ def save(file, data):
         raise Exception("File Not Found")
 
 
-if __name__ == "__main__":
-  parser = argparse.ArgumentParser(description='A wrapper for whoisxml.')
-  parser.add_argument("--api", help="Add a whoisxml API", required=True)
-  parser.add_argument("--ip", help="Target IP", default="127.0.0.1", required=True)
-  args = parser.parse_args()
-  print(args)
