@@ -1,9 +1,9 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "whoisxmlapi"
+name = "whoisxml"
 version = "0.0.1"
 authors = [
   { name="Nguyen Khanh Thuan", email="khanhthuan1995@gmail.com" },
@@ -20,3 +20,6 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/khanhthuan1995/whois"
 "Bug Tracker" = "https://github.com/khanhthuan1995/whois/issues"
+
+[project.scripts]
+whoisxml = "whoisxml.cli:main"
